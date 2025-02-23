@@ -1,17 +1,19 @@
 #include <iostream>
-#include <vector>
+
 using namespace std;
 
 int main() {
     int n;
-    cout << "Entrer le nombre d'éléments du tableau : ";
+    cout << "Entrer le nombre d'elements du tableau : ";
     cin >> n;
 
-    vector<int> ta(n);
+    int ta[100];
+
     for (int i = 0; i < n; i++) {
         cout << "Entrer le nombre " << (i + 1) << ": ";
         cin >> ta[i];
     }
+
 
     for (int i = 0; i < n; i++) {
         cout << "Le nombre " << (i + 1) << " est : " << ta[i] << endl;
